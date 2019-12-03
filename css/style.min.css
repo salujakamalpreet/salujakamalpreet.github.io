@@ -1,4 +1,15 @@
 
+.grid-item{
+  filter: sepia(0.3) grayscale(0.3) ;
+  transition: all .2s ease-in-out;
+}
+.grid-item:hover
+{
+  transform: scale(1.1);
+  filter: sepia(0) grayscale(0);
+}
+
+
 html {
   font-size: 62.5%;
   overflow-x: hidden; }
@@ -120,7 +131,7 @@ a:hover {
   padding: .5rem; }
 
 .section-content {
-  padding-top: 80px;
+  padding-top:40px;
   padding-bottom: 80px; }
 
 .title-wrap,
@@ -190,7 +201,7 @@ a {
   color: #fff !important;
   border: none !important; }
 
-#smcheader-navbar {
+.absolute-top {
   position: absolute;
   top: 0;
   right: 0;
