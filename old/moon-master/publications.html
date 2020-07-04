@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kpsaluja - Publications</title>
+    <meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="Kamalpreet" />
+    <link rel="icon" href="icord.ico">
+<meta http-equiv="Cache-control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+<link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.min.css">
+    
+    <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<style>
+    li{
+    margin-bottom: 10px;
+    }
+    canvas{
+    position: fixed;
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    top: 0;
+    left: 0;
+    filter: contrast(1.3);
+    }
+    .nav-link
+    {
+       color: white;
+       
+
+    }
+.fontheading
+{
+    font-family: 'Hind', sans-serif;
+}
+.fontsubheading
+{
+ 
+font-family: 'Lato', sans-serif;
+}
+
+/* The Loader */
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  overflow: hidden;
+}
+.no-js #loader-wrapper {
+  display: none;
+}
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #16a085;
+  -webkit-animation: spin 1.7s linear infinite;
+          animation: spin 1.7s linear infinite;
+  z-index: 11;
+}
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #e74c3c;
+  -webkit-animation: spin-reverse .6s linear infinite;
+          animation: spin-reverse .6s linear infinite;
+}
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #f9c922;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes spin-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background: white;
+  z-index: 10;
+}
+
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+
+/* Loaded styles */
+.loaded #loader-wrapper .loader-section.section-left {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded #loader {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  transition: all 0.3s 1s ease-out;
+}
+
+
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout" style="background: url(img/hero-2.jpg); background-size: contain; background-repeat: no-repeat; height:100%">
+    <div id="loader-wrapper">
+            <div id="loader"></div>
+            
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+            
+          </div>     
+    <canvas class="canvas" ></canvas>
+        <div class="boxed-page">
+		<nav id="smcheader-navbar" class="navbar navbar-expand-lg py-4">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="/">
+            <i class="material-icons">device_hub</i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr lnr-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-nav-header">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#who-we-are">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Publications</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    
+</nav>		
+
+<div class="jumbotron d-flex align-items-center" style="background: rgba(255,255,255,0.5);" >
+        <!-- <div style="HEIGHT: 80VH;   
+        LEFT: 0;
+        WIDTH: 100%;
+        POSITION: ABSOLUTE;
+        background: -moz-linear-gradient(left, #000 0%, #000 100%, transparent 100%);
+    background: -webkit-linear-gradient(left, #000 0%, #000 100%, transparent 100%);
+    background: linear-gradient(to right, #000 0%, #000 100%, transparent 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=1);
+    z-index: 1;
+    opacity: 0.7;
+    ">
+        </div>
+        <div style="HEIGHT: 80VH;
+        LEFT: 0;
+        WIDTH: 100%;
+        POSITION: ABSOLUTE;
+        background-image: url(img/hero-2.jpg);
+        background-size: cover;
+        z-index: 0">
+        </div>
+     -->
+  <div class="container text-center" style="color: black; z-index: 2;">
+    <h1 class="display-2 mb-4 fontheading">     <i class=" material-icons" style="font-size: larger;">school</i>Publications </h1>
+    
+    <p class="section-sub-title"><b>
+            <a href="https://www.researchgate.net/profile/Kamalpreet_Saluja" target="_blank"><i class="ai ai-researchgate-square ai-3x"></i></a>&nbsp;&nbsp;&nbsp;
+            <a href="https://scholar.google.com/citations?hl=en&user=N0hIXFUAAAAJ" target="_blank"><i class="ai ai-google-scholar-square ai-3x"></i></a>
+
+    </b></p>  
+  </div> 
+</div>		
+<section id="smcwho-we-are" class="bg-white">
+    <div class="container">
+        <div class="section-content">
+             <div class="title-wrap" style="text-align: left;">
+                 <h4 class="section-title">Journal Articles</h4>
+                 <p class="section-sub-title">
+                     <b>
+                            <ol>
+                                    <li>M. D. Babu, JeevithaShree DV, G. Prabhakar,<b>KPS Saluja </b>and P. Biswas,<b><a href="https://bop.unibe.ch/JEMR/article/view/JEMR.12.3.3"> Estimating Pilots’ Cognitive Load From Ocular Parameters Through Simulation and In-Flight Studies</a></b>, Journal of Eye Movement Research, Bern Open Publishing, 12 (3), 2019</li>
+                                    <li>Jeevithashree DV,<b> KPS Saluja </b>and P. Biswas,<b> <a href="https://content.iospress.com/articles/technology-and-disability/tad180206">A case study of developing gaze controlled interface for users with severe speech and motor impairment</b></a>, Technology and Disability 31(1), IOS Press, 2019</li>
+                                    <li>JeevithaShree DV,<b> KPS Saluja</b>, LRD Murthy and P. Biswas,<b> <a href="https://docs.lib.purdue.edu/jate/vol8/iss1/4/">Operating different displays in military fast jets using eye gaze tracker</a> </b>, Journal of Aviation Technology and Engineering 8(1), Purdue University Press, 2018</li>
+                                    </ol>
+                         </b>
+                 </p> 
+                 <h4 class="section-title" style="margin-top: 15px;">Conference Proceedings</h4>
+                 <p class="section-sub-title"  style="text-align: left;">
+                     <b>
+                           
+                                    <ol>
+                                            <li><b>KPS Saluja</b>, Jeevithashree Dv, S. Arjun and P. Biswas,<b><a href="https://dl.acm.org/citation.cfm?id=3338481"> Analyzing Eye Gaze Movement of Users with Different Reading Abilities due to Learning Disability</a></b>, 3rd International Conference on Graphics and Signal Processing (ICGSP 2019,<b> Best Presentation Award</b>)</li>
+                                            <li>A. Agarwal, JeevithaShree DV,<b> K S Saluja</b>, A Sahay, P Mounika, A Sahu, R Bhaumik, V K Rajendran and P. Biswas, <b><a href="https://link.springer.com/chapter/10.1007/978-981-13-5977-4_54">Comparing Two Webcam based Eye Gaze Trackers for Users with Severe Speech and Motor Impairment</a></b>, International Conference on Research into Design (ICoRD 2019) <b>[Distinguished Paper Award]</b></li>
+                                            <li>Jeevithashree DV, <b>K. P. Saluja</b> and P. Biswas,<b> <a href="https://dl.acm.org/citation.cfm?doid=3197391.3205395">Gaze Controlled Interface for Limited Mobility Environment</a></b>, ACM International Conference on Designing Interactive Systems (DIS) 2018</li>
+                                            </ol> 
+                                    </ol>
+                         </b>
+                 </p> 
+
+            </div>
+            
+            <p class="fontheading">
+            
+	
+                    
+            <!-- <div class="row text-center">
+                <div class="col-md-4 col-sm-6 ">
+                    <img class="rounded-circle" src="icons/animat-checkmark.gif" alt="Generic placeholder image" width="140" height="140">
+                    <h5 class="mb-4">Simple and Clean</h5>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a class="btn btn-link" href="#" role="button">View details</a></p>
+                </div> -->
+                <!-- /.col-md-4 col-sm-6  -->
+                <!-- <div class="col-md-4 col-sm-6 ">
+                    <img class="rounded-circle" src="icons/animat-customize.gif" alt="Generic placeholder image" width="140" height="140">
+                    <h5 class="mb-4">Easy to Customize</h5>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis.</p>
+                    <p><a class="btn btn-link" href="#" role="button">View details</a></p>
+                </div> -->
+                <!-- /.col-md-4 col-sm-6  -->
+                <!-- <div class="col-md-4 col-sm-6 ">
+                    <img class="rounded-circle" src="icons/animat-responsive.gif" alt="Generic placeholder image" width="140" height="140">
+                    <h5 class="mb-4">Fully Responsive</h5>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. </p>
+                    <p><a class="btn btn-link" href="#" role="button">View details</a></p>
+                </div> -->
+                <!-- /.col-md-4 col-sm-6  -->
+            </div>
+            <!-- /.row -->
+        </div>
+    </div>
+</section>		
+    <footer class="mastfoot mb-3 bg-white py-4 border-top">
+    <div class="inner container">
+         <div class="row">
+         	<div class="col-md-6 d-flex align-items-center justify-content-md-start justify-content-center">
+         		<p class="mb-0">&copy; 2019 Kp Saluja</p>
+         	</div>
+           
+            <div class="col-md-6">
+            	<nav class="nav nav-mastfoot justify-content-md-end justify-content-center">
+	                <a class="nav-link" href="#">
+	                	<i class="icon-facebook"></i>
+	                </a>
+	                <a class="nav-link" href="#">
+	                	<i class="icon-twitter"></i>
+	                </a>
+	                <a class="nav-link" href="#">
+	                	<i class="icon-instagram"></i>
+	                </a>
+	                <a class="nav-link" href="#">
+	                	<i class="icon-linkedin"></i>
+	                </a>
+	                <a class="nav-link" href="#">
+	                	<i class="icon-youtube"></i>
+	                </a>
+	                <a class="nav-link" href="#">
+	                	<i class="icon-pinterest"></i>
+	                </a>
+	            </nav>
+            </div>
+            
+        </div>
+    </div>
+</footer>	</div>
+	
+</div>
+	<!-- External JS -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="vendor/bootstrap/popper.min.js"></script>
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js "></script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="vendor/isotope/isotope.min.js"></script>
+	<script src="vendor/lightcase/lightcase.js"></script>
+	<script src="vendor/waypoints/waypoint.min.js"></script>
+	<script src="vendor/countTo/jquery.countTo.js"></script>
+
+	<!-- Main JS -->
+	<script src="js/app.min.js "></script>
+    
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-color.v1.min.js"></script>
+<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script >
+
+$(document).ready(function() {
+ 
+ // Fakes the loading setting a timeout
+   setTimeout(function() {
+       $('body').addClass('loaded');
+   }, 10);
+
+});
+
+var flag=0;
+//var voronoi = (function(){
+
+    /****************
+     * Object Voronoi
+     */
+/**
+    var Voronoi = function (){
+
+        this.canvas = null;
+        this.sites = null;
+        this.nbParticles = null;
+        this.speed = null;
+        this.voronoi = null;
+    };
+***/
+		var diagonal=Math.sqrt(window.innerWidth*window.innerWidth+window.innerHeight*window.innerHeight);
+//var canvas=document.getElementsByClassName("canvas");	
+init(".canvas",10);
+     function init(classCanvas, nbParticle){
+      
+        this.canvas=d3.select("canvas").on("touchmove mousemove", moved).node(),
+             context = this.canvas.getContext("2d"),
+             width = window.innerWidth,
+             height = window.innerHeight;
+      
+        this.canvas.width = window.innerWidth;
+        this.canvas.height = window.innerHeight;
+     
+        window.addEventListener("resize", this.onResize.bind(this), false);
+
+        /* Nb Particles */
+        this.nbParticles = nbParticle;
+
+        /* Speed Particles */
+        this.speed = [];
+        for(var i=0; i<this.nbParticles; i++) this.speed[i]=[];
+
+        /* Sites */
+        this.sites = d3.range(this.nbParticles)
+            .map(function(d) { return [Math.random() * window.innerWidth, Math.random() * window.innerHeight]; });
+
+        this.initRandomSpeed();
+        //this.redraw();
+       this.draw();
+    };
+
+    function initRandomSpeed(){
+
+        var i;
+        for (i = 0; i < this.nbParticles; i++) {
+
+            if(i%2) {
+                this.speed[i].x = -0.08;
+                this.speed[i].y = -0.08;
+            } else {
+                this.speed[i].x = 0.08;
+                this.speed[i].y = 0.08;
+            }
+
+        }
+
+
+    };
+
+   
+    function rebondOnScreen(){
+
+        var i;
+        for(i = 0; i < this.sites.length; i++) {
+
+            if(this.sites[i][0] < 0 || this.sites[i][0] > window.innerWidth) {
+                this.speed[i].x *= -1;
+            }
+
+            if(this.sites[i][1] < 0 || this.sites[i][1] > window.innerHeight) {
+                this.speed[i].y *= -1;
+            }
+
+            this.sites[i][0] += this.speed[i].x;
+            this.sites[i][1] += this.speed[i].y;
+        }
+
+    };
+function moved() {
+//console.log(  sites[0]);
+  sites[0] = d3.mouse(this);
+  redraw();
+}
+     function redraw(){
+	 flag=0;
+
+        var voronoi = d3.voronoi()
+            .extent([[-1, -1], [width + 1, height + 1]]);
+
+        var diagram = voronoi(this.sites);
+        var polygons = diagram.polygons();
+
+        context.clearRect(0, 0, width, height);
+        //context.beginPath();
+
+        /* Gradient */
+        var gradient = context.createLinearGradient(0, 0, window.innerWidth, 0);
+        gradient.addColorStop("0", "#ffffff");
+        gradient.addColorStop("1", "#ffffff");
+
+        /* DrawCells */
+        context.beginPath();
+		var h;
+        for (h = 0, n = polygons.length; h < n; ++h) this.drawCell(polygons[h]);
+        context.lineWidth=0;
+        context.strokeStyle = gradient;
+        context.stroke();
+		
+    };
+var x1=0,y1=0;
+      function drawCell(cell){
+        if (!cell) return false;
+	context.beginPath();
+        context.moveTo(cell[0][0], cell[0][1]);
+        for (var j = 1, m = cell.length; j < m; ++j) {
+            context.lineTo(cell[j][0], cell[j][1]);
+        }
+		if(flag==0)	   
+		{
+	   x1=cell.data[0];
+	   y1=cell.data[1];
+	   //console.log("::"+x1+","+y1);   
+	   flag=1;
+	   
+	   }
+	   
+		x=(cell.data[0]-x1); 
+	    y=(cell.data[1]-y1); 
+        percent=Math.sqrt((x*x)+(y*y)) 
+        var valueOfFill=0.1+(percent/diagonal)
+
+        // if(valueOfFill>=0.2 && valueOfFill <0.5)
+        //  context.fillStyle =d3.interpolateYlGn(0.1); 
+        //  else
+         context.fillStyle=d3.interpolateYlGn(valueOfFill);
+	   //return d3.interpolateSpectral(0.68-percent/diaognal); 
+	   
+		//console.log(cell);
+	    //context.fillStyle = d3.interpolateSpectral(Math.random(0,1));
+  context.fill();
+
+        context.closePath();
+        return true;
+
+    };
+
+    function draw(){
+
+        requestAnimationFrame(this.draw.bind(this));
+
+
+        this.rebondOnScreen();
+        this.redraw();
+	 //await sleep(2000);
+
+    };
+
+    function onResize(){
+
+        this.canvas = document.querySelector(".canvas");
+        this.canvas.width = window.innerWidth;
+        this.canvas.height = window.innerHeight;
+
+        width = canvas.width;
+        height = canvas.height;
+
+        
+        this.sites = d3.range(this.nbParticles)
+            .map(function(d) { return [Math.random() * window.innerWidth, Math.random() * window.innerHeight]; });
+
+
+    };
+	
+// 	<!-- for(var k=0;k<100;k++) -->
+// 	<!-- { -->
+
+//    <!-- } -->
+sites[0] = [width/2,height/3];
+  redraw();   
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  var flagg=false;
+$('button').on('click', function(){
+if(flagg==false)
+{
+$('article').css('filter','blur(10px)');
+flagg=true;
+$('nav').css('visibility','hidden');
+}
+else
+{
+flagg=true;
+$('article').css('filter','blur(0px)');
+$('nav').css('visibility','visible');
+}
+  $('body').toggleClass('open');
+});
+
+</script>
+</body>
+</html>
