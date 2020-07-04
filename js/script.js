@@ -80,7 +80,7 @@ function callBackground() {
             "shape": {
                 "type": "polygon",
                 "stroke": {
-                    "width": 2,
+                    "width": 1,
                     "color": "#000000"
                 },
                 "polygon": {
@@ -117,7 +117,7 @@ function callBackground() {
                 "distance": 150,
                 "color": "#000000",
                 "opacity": 0.5,
-                "width": 1.5
+                "width": 0.5
             },
             "move": {
                 "enable": true ,
