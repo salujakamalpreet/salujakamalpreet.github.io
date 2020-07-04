@@ -68,10 +68,10 @@ function callBackground() {
     particles=   particlesJS("particles-js", {
         "particles": {
             "number": {
-                "value": 51,
+                "value": 21,
                 "density": {
                     "enable": true,
-                    "value_area": 300
+                    "value_area": 400
                 }
             },
             "color": {
@@ -80,7 +80,7 @@ function callBackground() {
             "shape": {
                 "type": "polygon",
                 "stroke": {
-                    "width": 1,
+                    "width": 2,
                     "color": "#000000"
                 },
                 "polygon": {
@@ -117,10 +117,10 @@ function callBackground() {
                 "distance": 150,
                 "color": "#000000",
                 "opacity": 0.5,
-                "width": 1
+                "width": 1.5
             },
             "move": {
-                "enable": true,
+                "enable": true ,
                 "speed": 0.7,
                 "direction": "none",
                 "random": true,

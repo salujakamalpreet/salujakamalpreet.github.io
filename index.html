@@ -37,7 +37,21 @@
    
 <style>
 
-  
+   #overlay
+  {
+      position: absolute;
+      left: 0;
+      top: 0;
+      /* background: rgba(238, 238, 238,1); */
+      background: url("img/2/10.jpg");
+      background-size: cover;
+      width: 100vw;
+      /* filter: contrast(1.1); */
+      filter: brightness(1.1);
+      height: 100vh;
+      z-index: -100;
+
+  } 
     </style>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157547183-1"></script>
@@ -83,6 +97,7 @@
     
 </nav>
 <body data-spy="scroll" class="static-layout" style="min-height: 80vh;">
+    <div id="overlay"></div>
 <!-- <div id="overlay-div"  style="background: url(img/hero-2.jpg);
  background-size: cover;
   background-repeat:no-repeat; 

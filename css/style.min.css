@@ -245,7 +245,8 @@ a {
   border-radius: 0; }
 
 .jumbotron {
-  background-color: #fff;
+  /* background-color: #fff; */
+  background: rgba(0, 0, 0, 0);
   padding-top: 80px;
   padding-bottom: 80px;
   background-repeat: no-repeat;
@@ -267,7 +268,7 @@ a {
     position: absolute;
     display: block;
     content: "";
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0);
     opacity: 0.8;
     top: 0;
     bottom: 0;
